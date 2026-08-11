@@ -25,3 +25,5 @@ jobs:
           require-pr-number: true
           fragment-format: sectioned
           news-directory: news
+          exempt-authors: >-
+            pre-commit-ci[bot],dependabot[bot],conda-bot,github-actions[bot],conda-sandbox-bot
