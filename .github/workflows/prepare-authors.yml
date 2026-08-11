@@ -1,0 +1,32 @@
+name: Prepare authors
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: prepare or check
+        required: true
+        default: prepare
+        type: choice
+        options: [prepare, check]
+      since:
+        description: Commit range to scan
+        required: true
+        default: tag
+        type: choice
+        options: [tag, all]
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    if: '!github.event.repository.fork'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: conda/actions/prepare-authors@25017383959ac72dfd4e4d98c45489c915afcbce
+        with:
+          mode: ${{ inputs.mode }}
+          since: ${{ inputs.since }}
+          base-branch: main
+          token: ${{ secrets.SYNC_TOKEN }}
