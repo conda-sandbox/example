@@ -19,11 +19,10 @@ jobs:
           persist-credentials: false
 
       - name: Check News
-        uses: conda/actions/check-news@eb3dfe6018a3d9bf86637b2140f2c16d4c8a3b4a
+        uses: conda/actions/check-news@c76832d8727b116dc6d6395a0676c1836067ef95
         with:
           skip-label: no-news
           require-pr-number: true
-          fragment-format: sectioned
           news-directory: news
           exempt-authors: >-
             pre-commit-ci[bot],dependabot[bot],conda-bot,github-actions[bot],conda-sandbox-bot
