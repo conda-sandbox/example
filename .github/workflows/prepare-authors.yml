@@ -24,7 +24,7 @@ jobs:
     if: '!github.event.repository.fork'
     runs-on: ubuntu-latest
     steps:
-      - uses: conda/actions/prepare-authors@82dc027c295bd7cf3473ca3335c38b21ca3ac684
+      - uses: conda/actions/prepare-authors@30b07298480415d7df8f5c7eeef53a3b79e4df41
         with:
           mode: ${{ inputs.mode }}
           since: ${{ inputs.since }}
