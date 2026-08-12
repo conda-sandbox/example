@@ -10,4 +10,8 @@
 
 * Document fragment-first release notes test flow. (#2)
 
+### Other
+
+* Confirm prepare-release amends existing 26.9.0 after merge. (#9)
+
 
