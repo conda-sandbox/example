@@ -13,5 +13,6 @@
 ### Other
 
 * Confirm prepare-release amends existing 26.9.0 after merge. (#9)
+* Exercise prepare-release and check-news on ubuntu-slim. (#12)
 
 
