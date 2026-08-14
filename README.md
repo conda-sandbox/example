@@ -1,1 +1,1 @@
-# example
+# exampleno-news case
