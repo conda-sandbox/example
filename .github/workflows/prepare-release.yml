@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-slim
     steps:
       - name: Prepare Release Notes
-        uses: conda/actions/prepare-release@c76832d8727b116dc6d6395a0676c1836067ef95
+        uses: conda/actions/prepare-release@d9fcc1cf8e8873b802930c50b7275f2a38877634
         with:
           token: ${{ secrets.SYNC_TOKEN }}
           news-directory: news
