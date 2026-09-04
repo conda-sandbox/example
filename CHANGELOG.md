@@ -5,6 +5,7 @@
 ### Enhancements
 
 * Add example news pilot wiring for conda/actions#459. (#1)
+* Verify contributors section generation for conda/actions#509. (#14)
 
 ### Docs
 
@@ -14,5 +15,11 @@
 
 * Confirm prepare-release amends existing 26.9.0 after merge. (#9)
 * Exercise prepare-release and check-news on ubuntu-slim. (#12)
+
+### Contributors
+
+* @conda-bot
+* @danyeaw
+* @kenodegard
 
 
