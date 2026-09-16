@@ -3,12 +3,6 @@ name: Prepare authors
 on:
   workflow_dispatch:
     inputs:
-      mode:
-        description: prepare or check
-        required: true
-        default: prepare
-        type: choice
-        options: [prepare, check]
       since:
         description: Commit range to scan
         required: true
@@ -24,9 +18,8 @@ jobs:
     if: '!github.event.repository.fork'
     runs-on: ubuntu-latest
     steps:
-      - uses: conda/actions/prepare-authors@30b07298480415d7df8f5c7eeef53a3b79e4df41
+      - uses: conda/actions/prepare-authors@faab6a942e6e8490cd82eee2f6a2b174dace8e9e # v26.9.1
         with:
-          mode: ${{ inputs.mode }}
           since: ${{ inputs.since }}
           base-branch: main
           token: ${{ secrets.SYNC_TOKEN }}
